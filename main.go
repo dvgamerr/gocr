@@ -95,7 +95,7 @@ func main() {
 					rowImg := GetImgMat(row)
 
 					for _, rect := range rectTable {
-						gocv.Rectangle(rowImg, rect, color.RGBA{255, 0, 0, 0}, 1)
+						gocv.Rectangle(&rowImg, rect, color.RGBA{255, 0, 0, 0}, 1)
 					}
 
 					gocv.IMWrite(outputDir+"04_character_segment_"+strconv.Itoa(i)+".jpg", rowImg)

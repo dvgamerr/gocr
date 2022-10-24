@@ -82,7 +82,9 @@ func GetImgMat(arr [][][]uint8) gocv.Mat {
 		}
 	}
 
-	return gocv.NewMatFromBytes(height, width, flag[channels-1], flatArr)
+	goMat, err := gocv.NewMatFromBytes(height, width, flag[channels-1], flatArr)
+	check(err)
+	return goMat
 
 }
 

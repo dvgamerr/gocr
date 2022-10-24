@@ -4,6 +4,10 @@
 
 This project was mainly focus on Thai language and tested with some Thai characters, English characters and Arabic digits
 
+```
+go get -u -d gocv.io/x/gocv
+```
+
 ![gOCR](https://i.imgur.com/RjJ9uVg.jpg)
 
 ## Implemented functions
